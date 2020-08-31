@@ -1,0 +1,13 @@
+<h1>Add Sword</h1>
+<%= form_with(model: @sword, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Name" %>
+  </div>
+  <div class="field">
+    <%= f.label :category %>
+    <%= f.text_field :category, required: true, placeholder: "Category" %>
+  </div>
+  <%= f.submit %>
+<% end %>
+
