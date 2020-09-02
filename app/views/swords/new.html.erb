@@ -8,6 +8,10 @@
     <%= f.label :category %>
     <%= f.text_field :category, required: true, placeholder: "Category" %>
   </div>
+  <div class="field">
+    <%= f.label "Sword Image" %>
+    <%= f.file_field :avatar %><br>
+  </div>
   <%= f.submit %>
 <% end %>
 

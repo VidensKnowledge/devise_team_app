@@ -8,6 +8,9 @@
   <% @swords.each do |sword| %>
     <li>
       <%= sword.sword_info %>
+      <%= if @sword.avatar.attached? %>
+        <image src="<%= (url_for(@sword.avatar))%>">
+      <% end %>
     </li>
   <% end %>
 </ul>

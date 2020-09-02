@@ -43,10 +43,10 @@ class SwordsController < ApplicationController
   private
 
   def sword_params
-    params.require(:sword).permit(:name, :category)
+    params.require(:sword).permit(:name, :category, :avatar)
   end
 
   def set_sword
-    @sword = current_user.stwords.find(params[:id])
+    @sword = current_user.swords.find(params[:id])
   end
 end
